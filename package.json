@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "version": "0.1.0",
-  "homepage": "https://Parfyonovevg.github.io/todo-test-app",
+  "homepage": "https://Parfyonovevg.github.io/todo-task-app",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
