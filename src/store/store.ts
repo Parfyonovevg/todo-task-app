@@ -12,9 +12,9 @@ interface TodoState {
 }
 
 const TODOS = [
-  { id: '1', text: 'Learn React', completed: true },
-  { id: '2', text: 'Learn Redux', completed: false },
-  { id: '3', text: 'Build something fun!', completed: false },
+  { id: '1', text: 'Task 1', completed: true },
+  { id: '2', text: 'Task 2', completed: false },
+  { id: '3', text: 'Task 3', completed: false },
 ]
 
 const initialState: TodoState = {
