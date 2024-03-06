@@ -5,7 +5,7 @@ import { useAppDispatch , toggleTodo } from '../store/store'
 import { Todo } from '../../types'
 
 interface TodoProps {
-  completed: string | null
+  completed: boolean
 }
 
 interface TodoItemProps {
@@ -35,15 +35,13 @@ const StyledH3 = styled.h3<TodoProps>`
 const TodoItem: React.FC<TodoItemProps> = ({ todo }) => {
   const dispatch = useAppDispatch()
 
-  const completed = todo.completed ? 'completed' : 'null'
-
   const handleClick = ():void => {
     dispatch(toggleTodo(todo.id))
   }
 
   return (
     <StyledLi onClick={handleClick}>
-      <StyledH3 completed={completed}>{todo.text}</StyledH3>
+      <StyledH3 completed={todo.completed}>{todo.text}</StyledH3>
     </StyledLi>
   )
 }
